@@ -61,6 +61,22 @@ button, button:focus {
   background: #ffd289;
 }
 
+.color-blue {
+  color: #1475e4;
+}
+
+.color-blue-bg {
+  background: #1475e4;
+}
+
+.color-emerald {
+  color: #2cfa7b;
+}
+
+.color-emerald-bg {
+  background: #2cfa7b;
+}
+
 /* Mais vendidos */
 #top-sale .owl-carousel .item .product a {
   overflow: hidden;
@@ -116,15 +132,14 @@ button, button:focus {
 
 /* Estilo logo */
 #header {
-  position: fixed;
   z-index: 10;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .navbar {
-  position: fixed;
-  z-index: 5;
-  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .navbar-brand img {
@@ -183,5 +198,22 @@ footer {
 
 .copyright span {
   color: gold;
+}
+
+/* Produto */
+#product {
+  width: 800px;
+  height: 600px;
+  margin-top: 120px;
+}
+
+.quantity {
+  margin-top: 30px;
+}
+
+.product-details {
+  margin-top: 30px;
+  margin-bottom: 130px;
+  width: 62%;
 }
 /*# sourceMappingURL=style.css.map */

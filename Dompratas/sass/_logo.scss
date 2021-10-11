@@ -1,13 +1,12 @@
 /* Estilo logo */
 #header{
-    position: fixed;
     z-index: 10;
     width: 100%;
+    margin-bottom: 10px;
 }
 .navbar{
-    position: fixed;
-    z-index: 5;
-    width: 100%;
+    top:0 ;
+    left: 0;
 }
 .navbar-brand img{
     width: 70px;
