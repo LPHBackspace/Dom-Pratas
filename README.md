@@ -1,10 +1,10 @@
 # Dom-Pratas
 Site E-comerce desenvolvido com
-HTML;
-CSS;
-BOOTSTRAP;
-SASS;
-SCSS;
-PHP;
-MySQL;
-JavaScript.
+- HTML
+- CSS
+- BOOTSTRAP
+- SASS
+- SCSS
+- PHP
+- MySQL
+- JavaScript
