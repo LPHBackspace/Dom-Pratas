@@ -14,8 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="sass/style.css">
+
+    <?php
+    // require functions.php
+    require ('functions.php');
+    ?>
+
     <!-- Título e imagem de aba -->
     <title>Dom Pratas - Home</title>
+
 </head>
 <body>
 <!--Começo da Header-->
