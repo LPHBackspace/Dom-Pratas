@@ -15,7 +15,7 @@ include('Template/_mais-populares.php');
 // Mais populares
 
 // Social icons
-include('Template/_social-icons.hphp');
+include('Template/_social-icons.php');
 // Social icons
 ?>
 
