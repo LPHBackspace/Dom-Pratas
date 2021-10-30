@@ -13,11 +13,12 @@ class Product
 
     // fetch product data using gatData Method
     public function getData($table = 'product'){
-        $result = $this->db->con->query( query."SELECT * FROM {$table}");
+        $result = $this->db->con->query( "SELECT * FROM {$table}");
 
         $resultArray = array();
 
-        // getch product data one by one
+        // fetch product data one by one
+        // linha 22 (era para ficar resulttype "2:58:00")
         while ($item = mysqli_fetch_array($result, MYSQLI_ASSOC)){
             $resultArray[] = $item;
         }
@@ -25,3 +26,4 @@ class Product
         return $resultArray;
     }
 }
+

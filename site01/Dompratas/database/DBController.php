@@ -20,7 +20,8 @@ class DBController
         }
     }
 
-    public function __destruct(){
+    public function __destruct()
+    {
         $this->closeConnection();
     }
 
