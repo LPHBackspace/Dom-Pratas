@@ -11,7 +11,7 @@ include('Template/_cart-template.php');
 // Carrinho
 
 // Mais populares
-include('Template/_mais-populares.php');
+// include('Template/_mais-populares.php');
 // Mais populares
 
 // Social icons
