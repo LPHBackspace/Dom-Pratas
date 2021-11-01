@@ -43,8 +43,9 @@ class Cart
             //insert data into cart
             $result = $this->insertIntoCart($params);
             if($result){
+                
                 // reload page
-                header("location".$_SERVER['PHP_SELF']);
+                // header("Location: " . $_SERVER['PHP_SELF']);  // erro na pagina do carrinho
             }
         }
     }
