@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <!-- Owl-carousel CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="sass/style.css">
+    <!-- Título e imagem de aba -->
+    <title>Carrinho de compras</title>
+</head>
+<body>
+    <!--Começo da Header-->
+    <header id="header">
+        <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+            <p class="font-rale font-size-12 text-black-50 m-0">Dom Pratas Store</p>
+            <div class="font-rale font-size-14">
+                <a href="#" class="px-3 border-right border-left text-dark">Login</a>
+                <a href="#" class="px-3 border-right text-dark">Whishlist (O)</a>
+            </div>
+        </div>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
+          <a class="navbar-brand" href="#"><img src="/assents/logo.png"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav m-auto font-rubik">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">À Venda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Produtos<i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Em Breve</a>
+              </li>
+            </ul>
+            <form action="#" class="font-size-14 font-rale">
+                <a href="#" class="py-2 rounded-pill color-primary-bg">
+                    <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="px-3 py-2 rounded-pill text-dark bg-light">0<i class="fas fa-shopiing-cart"></i></span>
+                </a>
+            </form>
+          </div>
+      </nav>
+    </header>
+    <!--Main Site-->
+    <main id="main-site">
+
+      <!-- Carrinho de compras -->
+      <section id="cart" class="py-3">
+          <div class="container-fluid w-75">
+              <h5 class="font-baloo font-size-20">Carrinho de Compras</h5>
+
+              <!--Itens carrinho de compras-->
+              <div class="row">
+                  <div class="col-sm-9">
+                      <!-- Item-->
+                      <div class="row border-top py-3 mt-3">
+                          <div class="col-sm-2">
+                              <img src="../assents/products/produto1.jpeg" style="height: 120px" alt="cart" class="img-fluid">
+                          </div>
+                          <div class="col-sm-8">
+                            <h5 class="font-baloo font-size-20">Produto01</h5>
+                            <small>Dom Pratas</small>
+                            <!-- Avaliação -->
+                            <div class="d-flex">
+                              <div class="rating text-warning font-size-12">
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                                <span><i class="fas fa-star"></i></span>
+                              </div>
+                              <a href="#" class="px-2 font-rale font-size-14">25 Avaliações</a>
+                            </div>
+                            <!-- Avaliação -->
+
+                            <!-- Quantidade -->
+                            <div class="qty d-flex pt-2">
+                              <div class="d-flex font-rale w-25">
+                                <button class="qty-up border bg-light" data-id="pro1"><i class="fas fa-angle-up"></i></button>
+                                <input type="text"  data-id="pro1" class="qty_input border px-2 w-100 bg-light" disabled value="1" placeholder="1">
+                                <button data-id="pro1" class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                              </div>
+                              <button type="submit" class="btn font-baloo text-danger px-3 border-right">Apagar</button>
+                              <button type="submit" class="btn font-baloo text-danger px-3">Salvar para depois</button>
+                            </div>
+                            <!-- Quantidade -->
+                          </div>
+
+                          <div class="col-sm-2 text-right">
+                            <div class="font-size-20 text-danger font-baloo">
+                              R$<span class="product_price">152</span>
+                            </div>
+                          </div>
+                      </div>
+                      <!-- Item-->
+                      <!-- Item-->
+                      <div class="row border-top py-3 mt-3">
+                        <div class="col-sm-2">
+                            <img src="../assents/products/produto2.jpeg" style="height: 120px" alt="cart" class="img-fluid">
+                        </div>
+                        <div class="col-sm-8">
+                          <h5 class="font-baloo font-size-20">Produto02</h5>
+                          <small>Dom Pratas</small>
+                          <!-- Avaliação -->
+                          <div class="d-flex">
+                            <div class="rating text-warning font-size-12">
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                              <span><i class="fas fa-star"></i></span>
+                            </div>
+                            <a href="#" class="px-2 font-rale font-size-14">25 Avaliações</a>
+                          </div>
+                          <!-- Avaliação -->
+
+                          <!-- Quantidade -->
+                          <div class="qty d-flex pt-2">
+                            <div class="d-flex font-rale w-25">
+                              <button class="qty-up border bg-light"><i class="fas fa-angle-up"></i></button>
+                              <input type="text" class="qty_input border px-2 w-100 bg-light" disabled value="1" placeholder="1">
+                              <button class="qty-down border bg-light"><i class="fas fa-angle-down"></i></button>
+                            </div>
+                            <button type="submit" class="btn font-baloo text-danger px-3 border-right">Apagar</button>
+                            <button type="submit" class="btn font-baloo text-danger px-3">Salvar para depois</button>
+                          </div>
+                          <!-- Quantidade -->
+                        </div>
+
+                        <div class="col-sm-2 text-right">
+                          <div class="font-size-20 text-danger font-baloo">
+                            R$<span class="product_price">152</span>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Item-->
+                  </div>
+                  <!-- Preço total -->
+                  <div class="col-sm-3">
+                  <div class="sub-total border text-center mt-2">
+                    <h6 class="font-size-12 font-rale text-success py-3"><i class="fas fa-check"></i>Serviço de entrega gratis.</h6>
+                    <div class="border-top py-4">
+                      <h5 class="font-baloo font-size-20">Total (2 itens) &nbsp;<span class="text-danger">R$<span class="text-danger" id="deal-price">152.00</span>
+                      <button type="submit" class="btn btn-warning mt-3">Confirmar compra</button>
+                  </div>
+                  <!-- Preço total -->
+              </div>
+              <!--Itens carrinho de compras-->
+          </div>
+      </section>
+      <!-- Carrinho de compras -->
+
+        <!--Mais Populares-->
+        <section id="top-sale">
+          <div class="container py-5">
+            <h4 class="font-rubik font-size-20">Mais Populares</h4>
+            <hr>
+            <!--Owl carousel-->
+            <div class="owl-carousel owl-theme">
+              <div class="item py-2">
+                <div class="product font-rale">
+                  <a href="#"><img src="../assents/products/produto1.jpeg" alt="Produto 01" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Produto 01</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>R$ 100,000</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Adicionar ao carrinho</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2">
+                <div class="product font-rale">
+                  <a href="#"><img src="../assents/products/produto2.jpeg" alt="Produto 01" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Produto 02</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>R$ 100,000</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Adicionar ao carrinho</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2">
+                <div class="product font-rale">
+                  <a href="#"><img src="../assents/products/produto3.jpeg" alt="Produto 01" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Produto 03</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>R$ 100,000</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Adicionar ao carrinho</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2">
+                <div class="product font-rale">
+                  <a href="#"><img src="../assents/products/produto4.jpeg" alt="Produto 01" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Produto 04</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>R$ 100,000</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Adicionar ao carrinho</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2">
+                <div class="product font-rale">
+                  <a href="#"><img src="../assents/products/produto5.jpeg" alt="Produto 01" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Produto 05</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>R$ 100,000</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Adicionar ao carrinho</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2">
+                <div class="product font-rale">
+                  <a href="#"><img src="../assents/products/produto6.jpeg" alt="Produto 01" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Produto 06</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>R$ 100,000</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Adicionar ao carrinho</button>
+                  </div>
+                </div>
+              </div>
+              <div class="item py-2">
+                <div class="product font-rale">
+                  <a href="#"><img src="../assents/products/produto7.jpeg" alt="Produto 01" class="img-fluid"></a>
+                  <div class="text-center">
+                    <h6>Produto 07</h6>
+                    <div class="rating text-warning font-size-12">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="far fa-star"></i></span>
+                    </div>
+                    <div class="price py-2">
+                      <span>R$ 100,000</span>
+                    </div>
+                    <button type="submit" class="btn btn-warning font-size-12">Adicionar ao carrinho</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            <!--Owl carousel-->
+          </div>
+        </section>
+        <!--Mais Populares-->
+
+        
+        <!---------------------Social Icons--------------------->
+<div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="col-12">
+      <h2>Redes Sociais</h2>
+    </div>
+    <div class="col-12 social padding">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-google-plus-g"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+ <!---------------------Social Icons--------------------->
+
+    </main>
+    <!--Footer-->
+    <footer id="footer" class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <h4 class="font-rubik font-size-20">Dom Pratas</h4>
+            <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, sed!</p>
+          </div>
+          <div class="col-lg-4 col-12">
+            <h4 class="font-rubik font-size-20">Newslatter</h4>
+            <form class="form-row">
+              <div class="col">
+                  <input type="text" class="form-control" placeholder="E-mail">
+              </div>
+              <div class="col">
+                <button type="submit" class="btn btn-primary mb-2">Cadastrar-se</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4 class="font-rubik font-size-20">Informações</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Sobre Nós</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Informações</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Politica de privacidade</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Termos e contratos</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-12">
+            <h4 class="font-rubik font-size-20">Conta</h4>
+            <div class="d-flex flex-column flex-wrap">
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Minha conta</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">História</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Lista de desejos</a>
+              <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Newslatters</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright text-center bg-dark text-white py-2">
+      <p class="font-rale font-size-14"><span>&copy;Dom Pratas 2021.</span> Todos os Direitos Reservados.</p>
+
+    </div>
+    <!--Footer-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--Owl Carousel Js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+   <!--  isotope plugin cdn  -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+    <!--SavaScript-->
+    <script src="index.js"></script>
+</body>
+</html>
