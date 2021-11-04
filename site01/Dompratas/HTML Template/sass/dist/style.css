@@ -3,7 +3,8 @@
 /* global classes */
 button, button:focus {
   outline: none !important;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 /* Typography Classes */
@@ -60,37 +61,65 @@ button, button:focus {
   background: #ffd289;
 }
 
+.color-blue {
+  color: #1475e4;
+}
+
+.color-blue-bg {
+  background: #1475e4;
+}
+
+.color-emerald {
+  color: #2cfa7b;
+}
+
+.color-emerald-bg {
+  background: #2cfa7b;
+}
+
 /* Mais vendidos */
 #top-sale .owl-carousel .item .product a {
   overflow: hidden;
 }
+
 #top-sale .owl-carousel .item .product img {
-  transition: transform 0.5 ease;
+  -webkit-transition: -webkit-transform .5 ease;
+  transition: -webkit-transform .5 ease;
+  transition: transform .5 ease;
+  transition: transform .5 ease, -webkit-transform .5 ease;
   padding: 60px;
 }
+
 #top-sale .owl-carousel .item .product img:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
+
 #top-sale .owl-carousel .owl-nav button {
   position: absolute;
   top: 30%;
   outline: none;
 }
+
 #top-sale .owl-carousel .owl-nav button.owl-prev {
   left: 0;
 }
+
 #top-sale .owl-carousel .owl-nav button.owl-prev span,
 #top-sale .owl-carousel .owl-nav button.owl-next span {
   font-size: 35px;
   color: gold;
   padding: 0.1rem;
 }
+
 #top-sale .owl-carousel .owl-nav button.owl-prev span {
   margin-left: -4rem;
 }
+
 #top-sale .owl-carousel .owl-nav button.owl-next {
   right: 0;
 }
+
 #top-sale .owl-carousel .owl-nav button.owl-next span {
   margin-right: -4rem;
 }
@@ -103,15 +132,14 @@ button, button:focus {
 
 /* Estilo logo */
 #header {
-  position: fixed;
   z-index: 10;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .navbar {
-  position: fixed;
-  z-index: 5;
-  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .navbar-brand img {
@@ -174,6 +202,18 @@ footer {
 
 /* Produto */
 #product {
-  width: 300px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
+  margin-top: 120px;
 }
+
+.quantity {
+  margin-top: 30px;
+}
+
+.product-details {
+  margin-top: 30px;
+  margin-bottom: 130px;
+  width: 62%;
+}
+/*# sourceMappingURL=style.css.map */
