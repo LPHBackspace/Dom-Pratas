@@ -2,7 +2,7 @@
 <?php
 ob_start();
 // login
-include('Template/loginTemplate/_login-template.php');
+include('Template/loginTemplate/_register-template.php');
 // login
 
 // Social icons

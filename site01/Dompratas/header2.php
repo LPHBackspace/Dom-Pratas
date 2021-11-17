@@ -29,8 +29,8 @@
     <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
         <p class="font-rale font-size-12 text-black-50 m-0">Dom Pratas Store</p>
         <div class="font-rale font-size-14">
-            <a href="#" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="#" class="px-3 border-right text-dark">Favoritos (O)</a>
+            <a href="login.php" class="px-3 border-right border-left text-dark">Login</a>
+            <a href="cart.php" class="px-3 border-right text-dark">Favoritos (O)</a>
         </div>
     </div>
     <!--Nav Bar-->
@@ -45,10 +45,10 @@
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
+                    <a class="nav-link" href="#footer">Contato</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Produtos<i class="fas fa-chevron-down"></i></a>
+                    <a class="nav-link" href="#top-sale">Produtos<i class="fas fa-chevron-down"></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Políticas de Privacidade</a>
