@@ -77,18 +77,17 @@ INSERT INTO `product` (`item_id`, `item_category`, `item_name`, `item_price`, `i
 
 CREATE TABLE `user` (
                         `user_id` int(11) NOT NULL,
-                        `first_name` varchar(100) NOT NULL,
-                        `last_name` varchar(100) NOT NULL,
-                        `register_date` datetime DEFAULT NULL
+                        `username` varchar(255) NOT NULL,
+                        `email` varchar(255) NOT NULL,
+                        `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `first_name`, `last_name`, `register_date`) VALUES
-                                                                               (1, 'Daily', 'Tuition', '2020-03-28 13:07:17'),
-                                                                               (2, 'Akshay', 'Kashyap', '2020-03-28 13:07:17');
+INSERT INTO `user` (`user_id`, `username`, `email`, `password`) VALUES
+                                                                               (1, 'Leleo', 'leandro.oliveiracustodio02@hotmail.com', '12345678910');
 
 -- --------------------------------------------------------
 
