@@ -67,7 +67,24 @@ INSERT INTO `product` (`item_id`, `item_category`, `item_name`, `item_price`, `i
                                                                                                               (11, 'Feminino', 'Pulseira feminina pingente olho grego', 25.00, 'assents/products/produto11.jpeg', '2020-03-28 11:08:57'),
                                                                                                               (12, 'Feminino', 'Pulseira feminina pingente Barbie', 25.00, 'assents/products/produto12.jpeg', '2020-03-28 11:08:57'),
                                                                                                               (13, 'Feminino', 'Pulseira feminina pingente yin-yang', 25.00, 'assents/products/produto13.jpeg', '2020-03-28 11:08:57'),
-                                                                                                              (14, 'Masculino', 'Corrente masculina 3x1 (60cm)', 80.00, 'assents/products/produto14.jpeg', '2020-03-28 11:08:57');
+                                                                                                              (14, 'Masculino', 'Corrente masculina 3x1 (60cm)', 80.00, 'assents/products/produto14.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (15, 'Camiseta_Masculina', 'Camiseta Versace branca', 110.00, 'assents/products/produto15.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (16, 'Camiseta_Masculina', 'Camiseta balenciaga branca', 60.00, 'assents/products/produto16.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (17, 'Camiseta_Masculina', 'Camiseta Versace preta', 50.00, 'assents/products/produto17.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (18, 'Camiseta_Masculina', 'Camiseta balenciaga vermelha', 40.00, 'assents/products/produto18.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (19, 'Camiseta_Masculina', 'Camiseta Burberry preta', 30.00, 'assents/products/produto19.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (20, 'Camiseta_Masculina', 'Camiseta tommy cinza', 25.00, 'assents/products/produto20.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (21, 'Camiseta_Masculina', 'Camiseta Louis Vuitton preta', 25.00, 'assents/products/produto21.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (22, 'Camiseta_Masculina', 'Camiseta Louis Vuitton preta', 25.00, 'assents/products/produto22.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (23, 'Camiseta_Masculina', 'Camiseta balenciaga azul marinho', 25.00, 'assents/products/produto23.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (24, 'Camiseta_Masculina', 'Camiseta Louis Vuitton vermelha', 25.00, 'assents/products/produto24.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (25, 'Camiseta_Masculina', 'Camiseta philipp plein preta', 25.00, 'assents/products/produto25.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (26, 'Camiseta_Masculina', 'Camiseta Louis Vuitton branca', 25.00, 'assents/products/produto26.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (27, 'Camiseta_Masculina', 'Camiseta Louis Vuitton branca', 25.00, 'assents/products/produto27.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (28, 'Camiseta_Masculina', 'Camiseta Louis Vuitton azul marinho', 80.00, 'assents/products/produto28.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (29, 'Camiseta_Masculina', 'Camiseta philipp plein vermelha', 25.00, 'assents/products/produto29.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (30, 'Camiseta_Masculina', 'Camiseta tommy preta', 25.00, 'assents/products/produto30.jpeg', '2020-03-28 11:08:57'),
+                                                                                                              (31, 'Camiseta_Masculina', 'Camiseta tommy azul marinho', 80.00, 'assents/products/produto31.jpeg', '2020-03-28 11:08:57');
 
 -- --------------------------------------------------------
 
@@ -79,15 +96,16 @@ CREATE TABLE `user` (
                         `user_id` int(11) NOT NULL,
                         `username` varchar(255) NOT NULL,
                         `email` varchar(255) NOT NULL,
-                        `password` varchar(255) NOT NULL
+                        `password` varchar(255) NOT NULL,
+                        `role` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `email`, `password`) VALUES
-                                                                               (1, 'Leleo', 'leandro.oliveiracustodio02@hotmail.com', '12345678910');
+INSERT INTO `user` (`user_id`, `username`, `email`, `password`, `role`) VALUES
+                                                                               (1, 'Leleo', 'leandro.oliveiracustodio02@hotmail.com', '12345678910', '2');
 
 -- --------------------------------------------------------
 
