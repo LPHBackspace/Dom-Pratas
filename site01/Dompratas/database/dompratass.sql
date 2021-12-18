@@ -96,6 +96,9 @@ CREATE TABLE `user` (
                         `user_id` int(11) NOT NULL,
                         `username` varchar(255) NOT NULL,
                         `email` varchar(255) NOT NULL,
+                        `tel` int(11) NOT NULL,
+                        `birth_date` date NOT NULL,
+                        `adress` varchar(255) NOT NULL,
                         `password` varchar(255) NOT NULL,
                         `role` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -104,8 +107,8 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `email`, `password`, `role`) VALUES
-                                                                               (1, 'Leleo', 'leandro.oliveiracustodio02@hotmail.com', '12345678910', '2');
+INSERT INTO `user` (`user_id`, `username`, `email`, `tel`, `birth_date`, `adress`, `password`, `role`) VALUES
+                                                                               (1, 'Leleo', 'leandro.oliveiracustodio02@hotmail.com', '11982334655', '18012002', 'Rua Capitão Antônio Joaquim do Carm, Numero 225, São Paulo - Guaianases', '12345678910', '2');
 
 -- --------------------------------------------------------
 

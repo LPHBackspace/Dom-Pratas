@@ -20,6 +20,7 @@ class DBController
         }
     }
 
+    
     public function __destruct()
     {
         $this->closeConnection();
@@ -33,5 +34,3 @@ class DBController
         }
     }
 }
-
-
