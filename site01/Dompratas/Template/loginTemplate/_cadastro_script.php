@@ -69,37 +69,26 @@
 </header>
 <!--Main Site-->
 <main id="main-site">
-<div class="login-header">
-    <h2>Registrar-se</h2>
-</div>
 
-    <form class="login_box" method="post" action="database/User.php">
-        <div class="input-group">
-            <label>Nome de Usuário</label>
-            <input type="text" name="username">
-        </div>
-        <div class="input-group">
-            <label>E-mail</label>
-            <input type="email" name="email">
-        </div>
-        <div class="input-group">
-            <label>Telefone</label>
-            <input type="text" name="tel">
-        </div>
-        <div class="input-group">
-            <label>Data de Nascimento</label>
-            <input type="date" name="birth_date">
-        </div>
-        <div class="input-group">
-            <label>Endereço</label>
-            <input type="text" name="adress">
-        </div>
-        <div class="input-group">
-            <label>Senha</label>
-            <input type="password" name="password">
-        </div>
-        <div class="input-group">
-            <button type="submit" class="btn">Criar Conta</button>
-        </div>
-        <p>Já possui conta? <a href="login.php">Entrar</a></p>
-    </form>
+
+<?php
+  include 'DBController.php';
+
+  $username = $_POST['username'];
+  $email = $_POST['email'];
+  $tel = $_POST['tel'];
+  $birth_date = $_POST['birth_date'];
+  $adress = $_POST['adress'];
+  $password = $_POST['password'];
+
+  $sql = "INSERT INTO `user`(`username`, `email`, `tel`, `birth_date`, `adress`, `password`) 
+          VALUES ('$username','$email', $tel,'$birth_date','$adress','$password')";
+
+    if (mysqli_query($this, $sql)) {
+        echo "$nome cadastrado com sucesso!";
+    } else {
+        echo "$nome NÃO foi cadastrado";
+    }
+?>
+
+    

@@ -20,9 +20,8 @@
     require ('functions.php');
     ?>
 
-
     <!-- Título e imagem de aba -->
-    <title>Cadastrar - Dom Pratas</title>
+    <title>Login - Dom Pratas</title>
 </head>
 <body>
 <!--Começo da Header-->
@@ -69,37 +68,20 @@
 </header>
 <!--Main Site-->
 <main id="main-site">
-<div class="login-header">
-    <h2>Registrar-se</h2>
-</div>
-
-    <form class="login_box" method="post" action="database/User.php">
+    <div class="login-header">
+        <h2>Registrar-se</h2>
+    </div>
+    <form class="login_box" method="post" action="_login-template.php">
         <div class="input-group">
             <label>Nome de Usuário</label>
             <input type="text" name="username">
         </div>
         <div class="input-group">
-            <label>E-mail</label>
-            <input type="email" name="email">
-        </div>
-        <div class="input-group">
-            <label>Telefone</label>
-            <input type="text" name="tel">
-        </div>
-        <div class="input-group">
-            <label>Data de Nascimento</label>
-            <input type="date" name="birth_date">
-        </div>
-        <div class="input-group">
-            <label>Endereço</label>
-            <input type="text" name="adress">
-        </div>
-        <div class="input-group">
             <label>Senha</label>
-            <input type="password" name="password">
+            <input type="password" name="password_1">
         </div>
         <div class="input-group">
-            <button type="submit" class="btn">Criar Conta</button>
+            <button type="submit" name="login" class="btn">Entrar</button>
         </div>
-        <p>Já possui conta? <a href="login.php">Entrar</a></p>
+        <p>Não possui conta? <a href="register.php">Cadastrar</a></p>
     </form>

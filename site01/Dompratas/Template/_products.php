@@ -46,16 +46,8 @@
                 <!--Preço-->
                 <table class="my-3">
                     <tr class="font-rale font-size-14">
-                        <td>Preço</td>
-                        <td><strike>R$150.00</strike></td>
-                    </tr>
-                    <tr class="font-rale font-size-14">
-                        <td>Desconto:</td>
+                        <td>Preço:</td>
                         <td class="font-size-16 text-danger">R$ <span><?php echo $item['item_price'] ?? "0"; ?></span><small class="text-dark font-size-12">&nbsp;&nbsp;Impostos incluidos</small></td>
-                    </tr>
-                    <tr class="font-rale font-size-14">
-                        <td>Economize:</td>
-                        <td><span class="font-size-16 text-danger">R$20.00</span></td>
                     </tr>
                 </table>
                 <!--Preço-->

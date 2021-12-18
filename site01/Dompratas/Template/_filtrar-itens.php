@@ -18,6 +18,7 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
             <button class="btn is-checked" data-filter="*">Todos</button>
             <button class="btn" data-filter=".Masculino">Masculino</button>
             <button class="btn" data-filter=".Feminino">Feminino</button>
+            <button class="btn" data-filter=".Camiseta_Masculina">Camiseta Masculina</button>
         </div>
 
         <div class="grid">

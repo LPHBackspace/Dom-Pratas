@@ -34,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                     <div class="col-sm-8">
                         <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Unknown" ?></h5>
                         <small>Dom Pratas</small>
+
                         <!-- Avaliação -->
                         <div class="d-flex">
                             <div class="rating text-warning font-size-12">
@@ -67,6 +68,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                         </div>
                         <!-- Quantidade -->
+
+                        <br>
+
+                        <!--
+                        <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js"
+                        data-preference-id="<?php echo $item['pay_link'] ?? '1041741071-4b4302d5-68a8-432c-8d85-865cbbe4cf9a'?>" data-source="button">
+                        </script>
+                        -->
+ 
+
                     </div>
 
                     <div class="col-sm-2 text-right">
@@ -90,11 +101,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                     <h6 class="font-size-12 font-rale text-success py-3"><i class="fas fa-check"></i>Serviço de entrega gratis.</h6>
                     <div class="border-top py-4">
                         <h5 class="font-baloo font-size-20">Total ( <?php echo isset($subTotal) ? count($subTotal) : 0; ?> itens) &nbsp;<span class="text-danger">R$<span class="text-danger" id="deal-price"><?php echo isset($subTotal) ? $Cart->getSum($subTotal) : 0; ?></span>
-                      <button type="submit" class="btn btn-warning mt-3">Confirmar compra</button>
+                        <button type="submit" class="btn btn-warning mt-3">Confirmar compra</button>
                     </div>
                     <!-- Preço total -->
                 </div>
                 <!--Itens carrinho de compras-->
             </div>
+
+            
 </section>
 <!-- Carrinho de compras-->
