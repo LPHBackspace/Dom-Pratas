@@ -13,17 +13,25 @@
                 <img src="<?php echo $item['item_image'] ?? 'assents/products/produto1.jpeg'?>" alt="produto" class="img-fluid">
                 <div class="form-row pt-4 font-size-16 font-baloo">
                     <div class="col">
-                        <button type="submit" class="btn btn-danger form-control">Prosseguir compra</button>
+
+
+                        <a href="<?php echo $item['item_link']?>"><button class="btn btn-danger form-control">Prosseguir compra</button></a>
+                    
+
                     </div>
                     <div class="col">
 
-                        <?php
-                        if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])){
-                            echo '<button type="submit" disabled class="btn btn-success font-size-15 form-control">No Carrinho</button>';
-                        }else{
-                            echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-16 form-control">+ carrinho</button>';
-                        }
-                        ?>
+                    <form method="post">
+                                <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
+                                <input type="hidden" name="user_id" value="<?php echo 1; ?>">
+                                <?php
+                                if (in_array($item['item_id'], $in_cart ?? [])){
+                                    echo '<button type="submit" disabled class="btn btn-success font-size-12">No Carrinho</button>';
+                                }else{
+                                    echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Adicionar ao Carrinho</button>';
+                                }
+                                ?>
+                            </form>
 
                     </div>
                 </div>

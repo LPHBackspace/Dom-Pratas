@@ -1,3 +1,30 @@
+<?
+ include("connect.php");
+
+ function getData(){
+     $data = array();
+     $data[1] = $_POST['username'];
+     $data[2] = $_POST['email'];
+     $data[3] = $_POST['tel'];
+     $data[4] = $_POST['birth_date'];
+     $data[5] = $_POST['adress'];
+     $data[6] = $_POST['password'];
+     return $data;
+ }
+ if(isset($_POST['insert'])){
+     $info = getData();
+     $insert = "INSERT INTO [user](
+     ['username']
+     ['email']
+     ['tel']
+     ['birth_date']
+     ['adress']
+     ['password']) VALUES {'$info[1]', '$info[2]', '$info[3]', '$info[4]', '$info[5]', '$info[6]'}
+     ";
+     $result = odbC_exec($connection, $insert);
+ }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -99,7 +126,7 @@
             <input type="password" name="password">
         </div>
         <div class="input-group">
-            <button type="submit" class="btn">Criar Conta</button>
+            <button type="submit" class="btn" name="insert">Criar Conta</button>
         </div>
         <p>Já possui conta? <a href="login.php">Entrar</a></p>
     </form>
