@@ -30,7 +30,6 @@
         <p class="font-rale font-size-12 text-black-50 m-0">Dom Pratas Store</p>
         <div class="font-rale font-size-14">
             <a href="login.php" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="cart.php" class="px-3 border-right text-dark">Favoritos (O)</a>
         </div>
     </div>
     <!--Nav Bar-->
@@ -69,19 +68,28 @@
 <!--Main Site-->
 <main id="main-site">
     <div class="login-header">
-        <h2>Registrar-se</h2>
+        <h2>Entrar</h2>
     </div>
-    <form class="login_box" method="post" action="_login-template.php">
-        <div class="input-group">
+    <form class="login_box" method="post">
+
+
+        <div class="form-group">
             <label>Nome de Usuário</label>
-            <input type="text" name="username">
+            <input type="text" class="form-control" name="username">
         </div>
-        <div class="input-group">
+
+
+        <div class="form-group">
             <label>Senha</label>
-            <input type="password" name="password_1">
+            <input type="password" class="form-control" name="password_1">
         </div>
-        <div class="input-group">
+
+
+        <div class="form-group">
             <button type="submit" name="login" class="btn">Entrar</button>
         </div>
+
+        
         <p>Não possui conta? <a href="register.php">Cadastrar</a></p>
+
     </form>

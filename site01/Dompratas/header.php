@@ -31,7 +31,7 @@
         <p class="font-rale font-size-12 text-black-50 m-0">Dom Pratas Store</p>
         <div class="font-rale font-size-14">
             <a href="login.php" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="cart.php" class="px-3 border-right text-dark">Favoritos (O)</a>
+            <a href="manage.php" class="px-3 border-right text-dark">Gerenciamento</a>
         </div>
     </div>
     <!--Nav Bar-->

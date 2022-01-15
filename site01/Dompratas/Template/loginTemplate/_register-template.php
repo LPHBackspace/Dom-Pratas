@@ -1,29 +1,4 @@
-<?
- include("connect.php");
 
- function getData(){
-     $data = array();
-     $data[1] = $_POST['username'];
-     $data[2] = $_POST['email'];
-     $data[3] = $_POST['tel'];
-     $data[4] = $_POST['birth_date'];
-     $data[5] = $_POST['adress'];
-     $data[6] = $_POST['password'];
-     return $data;
- }
- if(isset($_POST['insert'])){
-     $info = getData();
-     $insert = "INSERT INTO [user](
-     ['username']
-     ['email']
-     ['tel']
-     ['birth_date']
-     ['adress']
-     ['password']) VALUES {'$info[1]', '$info[2]', '$info[3]', '$info[4]', '$info[5]', '$info[6]'}
-     ";
-     $result = odbC_exec($connection, $insert);
- }
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -58,7 +33,6 @@
         <p class="font-rale font-size-12 text-black-50 m-0">Dom Pratas Store</p>
         <div class="font-rale font-size-14">
             <a href="login.php" class="px-3 border-right border-left text-dark">Login</a>
-            <a href="cart.php" class="px-3 border-right text-dark">Favoritos (O)</a>
         </div>
     </div>
     <!--Nav Bar-->
@@ -100,33 +74,50 @@
     <h2>Registrar-se</h2>
 </div>
 
-    <form class="login_box" method="post" action="database/User.php">
-        <div class="input-group">
+    <form class="login_box" method="post">
+
+
+        <div class="form-group">
             <label>Nome de Usuário</label>
-            <input type="text" name="username">
+            <input type="text" class="form-control" name="username">
         </div>
-        <div class="input-group">
+
+
+        <div class="form-group">
             <label>E-mail</label>
-            <input type="email" name="email">
+            <input type="email" class="form-control" name="email">
         </div>
-        <div class="input-group">
+
+
+        <div class="form-group">
             <label>Telefone</label>
-            <input type="text" name="tel">
+            <input type="text" class="form-control" name="tel">
         </div>
-        <div class="input-group">
+
+
+        <div class="form-group">
             <label>Data de Nascimento</label>
-            <input type="date" name="birth_date">
+            <input type="date" class="form-control" name="birth_date">
         </div>
-        <div class="input-group">
+
+
+        <div class="form-group">
             <label>Endereço</label>
-            <input type="text" name="adress">
+            <input type="text" class="form-control" name="adress">
         </div>
-        <div class="input-group">
+
+
+        <div class="form-group">
             <label>Senha</label>
-            <input type="password" name="password">
+            <input type="password" class="form-control" name="password">
         </div>
-        <div class="input-group">
+
+
+        <div class="form-group">
             <button type="submit" class="btn" name="insert">Criar Conta</button>
         </div>
+
+        
         <p>Já possui conta? <a href="login.php">Entrar</a></p>
+
     </form>

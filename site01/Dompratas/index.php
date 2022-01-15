@@ -2,6 +2,9 @@
 ob_start();
 // header.php
 include ('header.php');
+
+// auto load
+require('vendor/autoload.php');
 ?>
 
 <?php
