@@ -16,6 +16,10 @@ if(isset($_POST['item_category'],$_POST['item_name'],$_POST['disponivel'])){
     $obProduct->disponivel = $_POST['disponivel'];
 
     $obProduct->cadastrar();
+
+
+    header('location: manage.php?status=success');
+    exit;
 }
 
 ?>
