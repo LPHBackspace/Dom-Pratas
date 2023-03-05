@@ -12,24 +12,24 @@ class Database{
      * @var string
      */
 
-    const HOST = 'localhost:3306';
+    const HOST = //your host name;
 
     /**
      * Nome do banco
      * @var string
      */
-    const NAME = 'dompratass';
+    const NAME = //your database name;
 
     /**
      * Nome de usuario
      * @var string
      */
-    const USER = "root";
+    const USER = //database username;
 
     /**
      * Senha de acesso ao Banco de dados
      */
-    const PASS = '';
+    const PASS = //password;
 
     /**
      * Nome da tabela a ser manipulada
