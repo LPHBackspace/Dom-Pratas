@@ -3,10 +3,10 @@
 class DBController
 {
   // Database Connection Properties
-    protected $host = 'localhost:3306';
-    protected $user = 'root';
-    protected $password = '';
-    protected $database = "dompratass";
+    protected $host = //database host name;
+    protected $user = //database username;
+    protected $password = //database password;
+    protected $database = //database name;
 
     // connection property
     public $con = null;
